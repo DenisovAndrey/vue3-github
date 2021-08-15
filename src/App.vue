@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <w-app>
+    <Toolbar />
+    <SearchUsers />
+  </w-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { defineComponent } from 'vue';
+import Toolbar from '@/containers/Toolbar.vue';
+import SearchUsers from '@/containers/SearchUsers.vue';
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    Toolbar,
+    SearchUsers,
   }
-}
+});
 </script>
 
-<style>
+<style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 </style>

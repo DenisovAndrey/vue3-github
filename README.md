@@ -1,5 +1,13 @@
 # vue-github
 
+## Description
+```
+It's a test task solution
+
+This application is developed on Vue3(beta) + TypeScript
+```
+
+
 ## Project setup
 ```
 npm install
